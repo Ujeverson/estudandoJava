@@ -5,8 +5,9 @@ public class FatorialUm {
 		int fatorial = 1;
 		for (int n = 1; n<=10; n++){
 			fatorial = n*fatorial;
-			System.out.println("O fatorial de "+n+" é "+n+"! = "+fatorial);
-		}//verificar a alteração.
+			System.out.println("O fatorial de "+n+" Ã© "+n+"! = "+fatorial);
+		}//verificar a alteraÃ§Ã£o.
+		//alteraÃ§Ã£o a partir do git
 	}
 
 }
