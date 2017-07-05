@@ -6,16 +6,18 @@ public class SomaPA {
 		int a1 = 7;
 		int r = 13;
 		int n = 4;
-		int pa;
+		int soma;
 
-		for (int i = 1; i <= n; i++) {
-			a1 = a1 + r;
-			if (i == 1) {
-				a1 = 7;
-			} 
+		soma = ((2 * a1 + (n - 1) * r) * n) / 2;
 
-			System.out.print(a1 + " + ");
+		for (int i = 0; i < n; i++) {
+			System.out.print(a1);
+			if((n-1) != i)
+				System.out.print(" + ");
 
+			a1 += r;
 		}
+		System.out.print(" = "+soma);
 	}
+	
 }
