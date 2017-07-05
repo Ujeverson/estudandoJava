@@ -4,7 +4,7 @@ public class SomaDeUmAMil {
 	public static void main(String[] args) {
 		int x = 0;
 		int i;
-		int n = 100;
+		int n = 8;
 		for (i = 1; i <= n; i++) {
 			x = x + i;
 			System.out.print(i);
