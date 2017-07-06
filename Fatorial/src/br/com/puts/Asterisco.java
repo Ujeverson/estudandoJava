@@ -1,9 +1,7 @@
 package br.com.puts;
 
 public class Asterisco {
-	
-	
-	
+
 	public static void main(String[] args) {
 		int n = 4;
 
