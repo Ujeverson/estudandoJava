@@ -1,23 +1,30 @@
 package br.com.puts;
 
+import java.util.Scanner;
+
 public class NumeroPrimo {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		int x = 30;
-		
-		double resultado;
-		int n = x+2;
-		boolean primo = false;
-		
-		for(int i=2; i < n; i++){
-			resultado = x/i;
-			if(resultado<=i)
-				System.out.println(resultado);
-		}
-		
-		//System.out.println("É primo: "+primo);
-	}
+	public static void main (String args[]) {
+		Scanner ler = new Scanner(System.in);
 
+		System.out.println("Informe um número inteiro:");
+		int n = ler.nextInt();
+
+		boolean primo = true;
+
+		int i = 2;
+		while ((primo == true) && (i <= (n / 2))) {
+			if ((n % i) == 0)
+				primo = false; // encontrou um divisor, portanto, não eh primo
+			else
+				i++; // próximo divisor
+		}
+
+		System.out.println();
+
+		if (primo == true)
+			System.out.println(n + " é um numero primo.");
+		else
+			System.out.println(n + " não é um numero primo.");
+	}
 }
